@@ -8,7 +8,7 @@ const version = "2.7.5";
 const NeoLog = require('./structs/NeoLog')
 const cookieParser = require("cookie-parser");
 global.xmppClients = [];
-global.port = 5595;
+global.port = process.env.PORT;
 global.LobbyBotPort = 80;
 
 (function () {
